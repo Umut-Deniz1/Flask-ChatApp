@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Sign Up{% endblock %}
+{% block content%} 
+
+<form action="/signup" method="POST" >
+    {% if unmessage %}
+    <div class="alert alert-danger">
+        {{ unmessage }}
+    </div>
+    {% endif %}
+    {% if forgot_message %}
+    <div class="alert alert-danger">
+        {{ forgot_message }}
+    </div>
+    {% endif %}
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" name="signUpEmail" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Username</label>
+        <input type="text" name="signUpUsername" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text"></div>
+      </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" name="signUpPassword" class="form-control" id="exampleInputPassword1">
+      <a href="/" class="text-decoration-none signup_a">Already have an Account?</a>
+    </div>
+    
+    <button type="submit" class="btn btn-primary signup_btn">Sign Up</button>
+  </form>
+
+{% endblock %}

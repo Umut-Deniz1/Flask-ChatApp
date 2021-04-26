@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Chat Room{% endblock %}
+{% block content%} 
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Chat Room</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Sign out</a>
+          </li> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <p id="chat_text"></p>
+
+  <div class="input-group mb-3 chat_txt">
+    <input type="text" class="form-control" placeholder="Message" aria-label="Message" id="msg">
+    <button class="btn btn-outline-secondary" type="button" id="btn_sendmsg">Send</button>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+
+
+{% endblock %}

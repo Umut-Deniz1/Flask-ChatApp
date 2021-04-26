@@ -1,0 +1,60 @@
+form{
+    position: fixed;
+    top: 27%;
+    left: 40%;
+    border: 1px solid rgb(223, 218, 218);
+    border-radius: 6px;
+    padding: 27px;
+    background: #f6f8fa;
+}
+.forgot_password{
+    float: right;
+    font-size: 12px;
+}
+.sign_button{
+    width: 100% !important;
+    background: #2ea44f !important;
+    border-color: #2ea44f !important;
+}
+.signup_btn{
+    width: 100% !important;
+    background: #2ea44f !important;
+    border-color: #2ea44f !important;
+}
+.signup_a{
+    font-size: 12px;
+}
+.forgot_btn{
+    width: 100% !important;
+}
+.chat_txt{
+    width: 500px!important;
+    position: relative;
+    top: 49px;
+    left: 11%;
+
+}
+#chat_text{
+    width: 500px;
+    height: 330px;
+    overflow-y: scroll;
+    position: relative;
+    left: 11%;
+    top: 50px;
+}
+#btn_sendmsg{
+    background-color: #2ea44f !important;
+    color: #fff;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar-thumb{
+    background-color: #009578 !important;
+    border-radius: 5px;
+}

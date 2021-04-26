@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block content%}
+
+<form action="/" method="POST">
+    </div>
+    {% if unmessage %}
+    <div class="alert alert-danger">
+        {{ unmessage }}
+    </div>
+    {% endif %}
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" name="signInEmail" class="form-control" id="exampleInputEmail1"
+            aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <a href="/forgotpassword" class="forgot_password">Forgot password?</a>
+        <input type="password" name="signInPassword" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="col-sm">
+        <a href="/signup" class="text-decoration-none">Create Account</a>
+    </div> <br>
+    <button type="submit" class="btn btn-primary sign_button">Sign In</button>
+
+</form>
+
+
+
+{% endblock %}
